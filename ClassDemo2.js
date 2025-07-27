@@ -12,16 +12,16 @@ class Product {
     productDescription,
     productRating
   ) {
-    // if (
-    //   productName === undefined ||
-    //   productPrice === undefined ||
-    //   productCategory === undefined ||
-    //   productDescription === undefined ||
-    //   productRating === undefined
-    // ) {
-    //   console.log("All parameters must be provided.");
-    //   return;
-    // }
+    if (
+      productName === undefined ||
+      productPrice === undefined ||
+      productCategory === undefined ||
+      productDescription === undefined ||
+      productRating === undefined
+    ) {
+      console.log("All parameters must be provided.");
+      return;
+    }
     this.#name = productName;
     if (productPrice > 0 && typeof productPrice === "number") {
       this.#price = productPrice;

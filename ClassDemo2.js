@@ -23,7 +23,7 @@ class Product {
     //   return;
     // }
     this.#name = productName;
-    if (product > 0 && typeof productPrice === "number") {
+    if (productPrice > 0 && typeof productPrice === "number") {
       this.#price = productPrice;
     }
     this.#category = productCategory;

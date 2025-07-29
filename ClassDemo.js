@@ -44,6 +44,7 @@ class Product {
     }
   }
 }
+
 let iphone = new Product();
 iphone.setPrice(150000);
 iphone.setName("iPhone 14");
